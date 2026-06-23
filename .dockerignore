@@ -3,7 +3,10 @@
 node_modules
 .next
 *.log
-.env*
 .DS_Store
 upload
 data
+pgdata
+.env
+.env.*
+.karen-test

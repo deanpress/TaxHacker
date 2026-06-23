@@ -1,8 +1,12 @@
 services:
   app:
-    image: ghcr.io/vas3k/taxhacker:latest
+    build:
+      context: .
+    image: taxhacker-karen:local
     ports:
       - "7331:7331"
+    env_file:
+      - .env
     environment:
       - NODE_ENV=production
       - SELF_HOSTED_MODE=true

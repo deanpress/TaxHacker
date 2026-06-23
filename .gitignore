@@ -59,3 +59,4 @@ pgdata
 
 # Local git worktrees
 .worktrees/
+.karen-test
