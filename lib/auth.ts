@@ -27,6 +27,9 @@ export const auth = betterAuth({
   appName: config.app.title,
   baseURL: config.app.baseURL,
   secret: config.auth.secret,
+  user: {
+    fields: { image: "avatar" },
+  },
   email: {
     provider: "resend",
     from: config.email.from,
